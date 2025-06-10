@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative; /* Für absolute Positionierung des Buttons */
+  position: relative; /* Für absolute Positionierung */
   overflow: hidden; /* Verhindert Überlauf */
 }
 
@@ -30,37 +30,46 @@ h1 {
   z-index: 1;
 }
 
-.blend-button {
-  background: rgba(255, 255, 255, 0.2); /* Weißer Hintergrund mit 20% Sichtbarkeit */
-  border: 2px solid white; /* Basis-Randfarbe */
-  color: white; /* Textfarbe */
+.apple-button {
+  background: linear-gradient(135deg, rgba(0, 122, 255, 0.7), rgba(0, 191, 255, 0.5)); /* Blauer Farbverlauf */
+  border: none; /* Kein sichtbarer Rand */
+  color: white;
   padding: 12px 24px;
   font-size: 18px;
   font-weight: bold;
-  border-radius: 25px; /* Runde Ecken */
+  border-radius: 25px;
   cursor: pointer;
   outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* Abstand zwischen Icon und Text */
-  mix-blend-mode: difference; /* Dynamischer Effekt */
+  gap: 8px;
   position: absolute; /* Ermöglicht Bewegung */
-  z-index: 2; /* Über dem Hintergrund */
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatten für 3D-Effekt */
 }
 
-.blend-button:hover {
-  border-color: #42A5F5; /* Leichter Farbwechsel beim Hover */
-}
-
-.button-icon, .blend-button span {
-  filter: blur(1px); /* Leichter Blur-Effekt für Icon und Text */
+.apple-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  border-radius: 25px;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Hintergrund bleibt sichtbar */
 }
 
 .button-icon {
-  width: 20px; /* Größe des SVG-Icons */
+  width: 20px;
   height: 20px;
   vertical-align: middle;
+}
+
+.apple-button:hover {
+  background: linear-gradient(135deg, rgba(0, 122, 255, 0.8), rgba(0, 191, 255, 0.6)); /* Dunkler beim Hover */
 }
 
 /* Mobile Ansicht anpassen */
@@ -76,7 +85,7 @@ h1 {
     padding: 8px;
   }
 
-  .blend-button {
+  .apple-button {
     padding: 10px 20px;
     font-size: 16px;
   }
