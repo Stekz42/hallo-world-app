@@ -2,7 +2,7 @@
   text-align: center;
   margin-top: 50px;
   min-height: 100vh; /* Vollständige Höhe der Seite */
-  background-image: url('/background.png'); /* Pfad zu deiner Datei */
+  background-image: url('/background.png'); /* Pfad zu public/background.png */
   background-size: cover; /* Bild füllt den gesamten Bereich */
   background-repeat: no-repeat; /* Verhindert Wiederholung */
   background-position: center; /* Zentriert das Bild */
