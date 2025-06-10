@@ -1,31 +1,21 @@
-import { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX - 75, y: e.clientY - 25 }); // Hälfte der Button-Größe
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
-
   return (
     <div className="App">
-      <h1>Hallo World!</h1>
-      <button
-        className="apple-button"
-        style={{ left: position.x, top: position.y, position: 'absolute' }}
-      >
-        <img src="/moon.svg" alt="Moon Icon" className="button-icon" />
-        Focus
-      </button>
+      <h1>Cannabis Experience</h1>
+      <div className="button-container">
+        <button className="cannabis-button-1">Explore Strains</button>
+        <button className="cannabis-button-2">Shop Now</button>
+        <button className="cannabis-button-3">Learn Effects</button>
+        <button className="cannabis-button-4">Grow Tips</button>
+        <button className="cannabis-button-5">CBD Products</button>
+        <button className="cannabis-button-6">Edibles Menu</button>
+        <button className="cannabis-button-7">Vape Options</button>
+        <button className="cannabis-button-8">Community Hub</button>
+        <button className="cannabis-button-9">Special Offers</button>
+        <button className="cannabis-button-10">Contact Us</button>
+      </div>
     </div>
   );
 }
