@@ -31,7 +31,7 @@ h1 {
 }
 
 .blend-button {
-  background: transparent; /* Durchsichtiger Hintergrund */
+  background: rgba(255, 255, 255, 0.2); /* Weißer Hintergrund mit 20% Sichtbarkeit */
   border: 2px solid white; /* Basis-Randfarbe */
   color: white; /* Textfarbe */
   padding: 12px 24px;
