@@ -1,39 +1,85 @@
 body {
-  margin: 0; /* Entfernt Ränder des Body */
-  padding: 0; /* Entfernt Polster des Body */
-  background-color: #000000; /* Setzt die Grundfarbe auf Schwarz */
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
 }
 
 .App {
   text-align: center;
-  min-height: 100vh; /* Vollständige Höhe der Seite */
-  background-image: url('/background.png'); /* Pfad vom Root-Ordner */
-  background-size: cover; /* Bild füllt den gesamten Bereich */
-  background-repeat: no-repeat; /* Verhindert Wiederholung */
-  background-position: center; /* Zentriert das Bild */
-  background-attachment: fixed; /* Bild bleibt bei Scrollen fixiert (optional) */
+  min-height: 100vh;
+  background-image: url('/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
   color: #333;
   font-family: Arial, sans-serif;
-  background-color: rgba(255, 255, 255, 0.7); /* Weißer Hintergrund mit Transparenz */
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 10px;
   display: inline-block;
-  position: relative; /* Verhindert Überlappung */
-  z-index: 1; /* Text über dem Hintergrund */
+  position: relative;
+  z-index: 1;
+}
+
+.liquid-button {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 191, 255, 0.3); /* Leichter blauer Farbverlauf */
+  border: none;
+  border-radius: 25px; /* Runde Ecken */
+  backdrop-filter: blur(10px); /* Glas-Effekt durch Verwischen */
+  box-shadow: 0 4px 15px rgba(0, 191, 255, 0.4); /* Weicher Schatten */
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease; /* Sanfte Animation */
+  margin-top: 20px; /* Abstand vom Text */
+}
+
+.liquid-button:hover {
+  background: rgba(0, 191, 255, 0.5); /* Dunklerer Farbverlauf beim Hover */
+  box-shadow: 0 6px 20px rgba(0, 191, 255, 0.6); /* Größerer Schatten beim Hover */
+  transform: translateY(-2px); /* Leichtes Hochheben */
+}
+
+.liquid-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2); /* Leichter innerer Glanz */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 /* Mobile Ansicht anpassen */
 @media (max-width: 768px) {
   .App {
-    background-size: cover; /* Bleibt cover für mobile */
-    background-position: center; /* Zentriert auch auf mobilen Geräten */
-    min-height: 100vh; /* Sicherstellt volle Höhe */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
   }
 
   h1 {
-    font-size: 24px; /* Kleinere Schrift für mobile Ansicht */
-    padding: 8px; /* Weniger Polster */
+    font-size: 24px;
+    padding: 8px;
+  }
+
+  .liquid-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 15px;
   }
 }
