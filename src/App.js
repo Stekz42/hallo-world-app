@@ -4,7 +4,10 @@ function App() {
   return (
     <div className="App">
       <h1>Hallo World!</h1>
-      <button className="liquid-button">Focus</button>
+      <button className="custom-button">
+        <img src="/moon.png" alt="Moon Icon" className="button-icon" />
+        Focus
+      </button>
     </div>
   );
 }
