@@ -16,6 +16,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative; /* Für absolute Positionierung des Buttons */
+  overflow: hidden; /* Verhindert Überlauf */
 }
 
 h1 {
@@ -43,17 +45,22 @@ h1 {
   justify-content: center;
   gap: 8px; /* Abstand zwischen Icon und Text */
   mix-blend-mode: difference; /* Dynamischer Effekt */
-  margin-top: 20px;
+  position: absolute; /* Ermöglicht Bewegung */
+  z-index: 2; /* Über dem Hintergrund */
+}
+
+.blend-button:hover {
+  border-color: #42A5F5; /* Leichter Farbwechsel beim Hover */
+}
+
+.button-icon, .blend-button span {
+  filter: blur(1px); /* Leichter Blur-Effekt für Icon und Text */
 }
 
 .button-icon {
   width: 20px; /* Größe des SVG-Icons */
   height: 20px;
   vertical-align: middle;
-}
-
-.blend-button:hover {
-  border-color: #42A5F5; /* Leichter Farbwechsel beim Hover */
 }
 
 /* Mobile Ansicht anpassen */
