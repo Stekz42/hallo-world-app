@@ -28,14 +28,13 @@ h1 {
   z-index: 1;
 }
 
-.custom-button {
-  position: relative;
+.blend-button {
+  background: transparent; /* Durchsichtiger Hintergrund */
+  border: 2px solid white; /* Basis-Randfarbe */
+  color: white; /* Textfarbe */
   padding: 12px 24px;
   font-size: 18px;
   font-weight: bold;
-  color: white;
-  background-color: #4FC3F7; /* Hellblauer Hintergrund */
-  border: none;
   border-radius: 25px; /* Runde Ecken */
   cursor: pointer;
   outline: none;
@@ -43,6 +42,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 8px; /* Abstand zwischen Icon und Text */
+  mix-blend-mode: difference; /* Dynamischer Effekt */
   margin-top: 20px;
 }
 
@@ -52,8 +52,8 @@ h1 {
   vertical-align: middle;
 }
 
-.custom-button:hover {
-  background-color: #42A5F5; /* Dunklerer Ton beim Hover */
+.blend-button:hover {
+  border-color: #42A5F5; /* Leichter Farbwechsel beim Hover */
 }
 
 /* Mobile Ansicht anpassen */
@@ -69,7 +69,7 @@ h1 {
     padding: 8px;
   }
 
-  .custom-button {
+  .blend-button {
     padding: 10px 20px;
     font-size: 16px;
   }
