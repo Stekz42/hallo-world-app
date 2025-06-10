@@ -28,40 +28,32 @@ h1 {
   z-index: 1;
 }
 
-.liquid-button {
+.custom-button {
   position: relative;
   padding: 12px 24px;
   font-size: 18px;
   font-weight: bold;
   color: white;
-  background: rgba(0, 191, 255, 0.3); /* Leichter blauer Farbverlauf */
+  background-color: #4FC3F7; /* Hellblauer Hintergrund */
   border: none;
   border-radius: 25px; /* Runde Ecken */
-  backdrop-filter: blur(10px); /* Glas-Effekt durch Verwischen */
-  box-shadow: 0 4px 15px rgba(0, 191, 255, 0.4); /* Weicher Schatten */
   cursor: pointer;
   outline: none;
-  transition: all 0.3s ease; /* Sanfte Animation */
-  margin-top: 20px; /* Abstand vom Text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Abstand zwischen Icon und Text */
+  margin-top: 20px;
 }
 
-.liquid-button:hover {
-  background: rgba(0, 191, 255, 0.5); /* Dunklerer Farbverlauf beim Hover */
-  box-shadow: 0 6px 20px rgba(0, 191, 255, 0.6); /* Größerer Schatten beim Hover */
-  transform: translateY(-2px); /* Leichtes Hochheben */
-}
-
-.liquid-button::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
+.button-icon {
+  width: 20px; /* Größe des SVG-Icons */
   height: 20px;
-  background: rgba(255, 255, 255, 0.2); /* Leichter innerer Glanz */
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
+  vertical-align: middle;
+}
+
+.custom-button:hover {
+  background-color: #42A5F5; /* Dunklerer Ton beim Hover */
 }
 
 /* Mobile Ansicht anpassen */
@@ -77,9 +69,13 @@ h1 {
     padding: 8px;
   }
 
-  .liquid-button {
+  .custom-button {
     padding: 10px 20px;
     font-size: 16px;
-    margin-top: 15px;
+  }
+
+  .button-icon {
+    width: 18px;
+    height: 18px;
   }
 }
