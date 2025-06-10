@@ -54,7 +54,7 @@ h1 {
 .cannabis-button-1:hover {
   transform: scale(1.1);
 }
-<!-- Eigenschaften: Grüner Farbverlauf, dicker Rand, Schatten, Skalierung beim Hover -->
+/* Eigenschaften: Grüner Farbverlauf, dicker Rand, Schatten, Skalierung beim Hover */
 
 .cannabis-button-2 {
   background: radial-gradient(circle, #6b4e31, #8d6e63);
@@ -79,7 +79,7 @@ h1 {
 .cannabis-button-2:hover {
   background: radial-gradient(circle, #6b4e31, #a1887f);
 }
-<!-- Eigenschaften: Brauner Verlauf, runder Rand, eingebettetes Blattmuster, Hover-Farbanpassung -->
+/* Eigenschaften: Brauner Verlauf, runder Rand, eingebettetes Blattmuster, Hover-Farbanpassung */
 
 .cannabis-button-3 {
   background: linear-gradient(135deg, #4caf50, #a5d6a7);
@@ -96,7 +96,7 @@ h1 {
   from { box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); }
   to { box-shadow: 0 0 30px rgba(76, 175, 80, 0.8); }
 }
-<!-- Eigenschaften: Grüner Verlauf, leuchtende Animation, kein Rand, Großbuchstaben -->
+/* Eigenschaften: Grüner Verlauf, leuchtende Animation, kein Rand, Großbuchstaben */
 
 .cannabis-button-4 {
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%234CAF50" d="M12 2L2 7l10 5 10-5-10-5z"/></svg>') repeat, #2f4f2f;
@@ -112,7 +112,7 @@ h1 {
   border-color: #a5d6a7;
   transform: rotate(5deg);
 }
-<!-- Eigenschaften: Blattmuster, doppelter Rand, Textschatten, Rotation beim Hover -->
+/* Eigenschaften: Blattmuster, doppelter Rand, Textschatten, Rotation beim Hover */
 
 .cannabis-button-5 {
   background: linear-gradient(90deg, #1b5e20, #43a047, #1b5e20);
@@ -137,7 +137,7 @@ h1 {
 .cannabis-button-5:hover::after {
   width: 100%;
 }
-<!-- Eigenschaften: Dreifarbverlauf, dünner Rand, Hover-Übergangseffekt -->
+/* Eigenschaften: Dreifarbverlauf, dünner Rand, Hover-Übergangseffekt */
 
 .cannabis-button-6 {
   background: radial-gradient(circle, #3e2723, #5d4037, #8d6e63);
@@ -152,7 +152,7 @@ h1 {
 .cannabis-button-6:hover {
   filter: brightness(1.3);
 }
-<!-- Eigenschaften: Radialer Braunverlauf, ausgeprägter Rand, Helligkeitsfilter -->
+/* Eigenschaften: Radialer Braunverlauf, ausgeprägter Rand, Helligkeitsfilter */
 
 .cannabis-button-7 {
   background: linear-gradient(45deg, #558b2f, #9ccc65);
@@ -167,7 +167,7 @@ h1 {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
-<!-- Eigenschaften: Grüner Verlauf, gestrichelter Rand, Hüpfeffekt -->
+/* Eigenschaften: Grüner Verlauf, gestrichelter Rand, Hüpfeffekt */
 
 .cannabis-button-8 {
   background: linear-gradient(135deg, #1b5e20, #4caf50, #81c784);
@@ -188,7 +188,7 @@ h1 {
 .cannabis-button-8:hover::after {
   opacity: 1;
 }
-<!-- Eigenschaften: Dreifarbverlauf, Textschatten, Hover-Text-Effekt -->
+/* Eigenschaften: Dreifarbverlauf, Textschatten, Hover-Text-Effekt */
 
 .cannabis-button-9 {
   background: radial-gradient(circle, #6b4e31, #8d6e63, #d7ccc8);
@@ -202,7 +202,7 @@ h1 {
 .cannabis-button-9:hover {
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
 }
-<!-- Eigenschaften: Radialer Verlauf, gerippter Rand, innerer Schatten -->
+/* Eigenschaften: Radialer Verlauf, gerippter Rand, innerer Schatten */
 
 .cannabis-button-10 {
   background: linear-gradient(90deg, #2e7d32, #66bb6a, #a5d6a7);
@@ -218,4 +218,4 @@ h1 {
   50% { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
-<!-- Eigenschaften: Dreifarbverlauf, eingeritzter Rand, Pulsationsanimation -->
+/* Eigenschaften: Dreifarbverlauf, eingeritzter Rand, Pulsationsanimation */
