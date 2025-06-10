@@ -31,9 +31,8 @@ h1 {
 }
 
 .apple-button {
-  background: radial-gradient(circle at center, rgba(0, 122, 255, 0.1) 0%, rgba(0, 122, 255, 0.35) 100%); /* Verlauf von 10% bis 35% */
-  border: 2px solid transparent; /* Transparenter Rand als Basis */
-  border-image: radial-gradient(circle at center, rgba(0, 122, 255, 0.35) 0%, rgba(0, 122, 255, 0.4) 100%) 1; /* Rand mit 40% Sichtbarkeit */
+  background: linear-gradient(to bottom, rgba(0, 122, 255, 0.1) 0%, rgba(0, 122, 255, 0.35) 100%); /* Vertikaler Verlauf von 10% bis 35% */
+  border: 2px solid rgba(0, 122, 255, 0.4); /* Schmaler Rand mit 40% Sichtbarkeit */
   color: white;
   padding: 12px 24px;
   font-size: 18px;
@@ -70,8 +69,8 @@ h1 {
 }
 
 .apple-button:hover {
-  background: radial-gradient(circle at center, rgba(0, 122, 255, 0.15) 0%, rgba(0, 122, 255, 0.4) 100%); /* Dunklerer Verlauf beim Hover */
-  border-image: radial-gradient(circle at center, rgba(0, 122, 255, 0.4) 0%, rgba(0, 122, 255, 0.45) 100%) 1; /* Dunklerer Rand beim Hover */
+  background: linear-gradient(to bottom, rgba(0, 122, 255, 0.15) 0%, rgba(0, 122, 255, 0.4) 100%); /* Dunklerer Verlauf beim Hover */
+  border-color: rgba(0, 122, 255, 0.45); /* Dunklerer Rand beim Hover */
 }
 
 /* Mobile Ansicht anpassen */
