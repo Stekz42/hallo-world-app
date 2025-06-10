@@ -1,3 +1,9 @@
+body {
+  margin: 0; /* Entfernt Ränder des Body */
+  padding: 0; /* Entfernt Polster des Body */
+  background-color: #000000; /* Setzt die Grundfarbe auf Schwarz */
+}
+
 .App {
   text-align: center;
   min-height: 100vh; /* Vollständige Höhe der Seite */
@@ -6,8 +12,6 @@
   background-repeat: no-repeat; /* Verhindert Wiederholung */
   background-position: center; /* Zentriert das Bild */
   background-attachment: fixed; /* Bild bleibt bei Scrollen fixiert (optional) */
-  margin: 0; /* Entfernt Ränder */
-  padding: 0; /* Entfernt Polster */
 }
 
 h1 {
