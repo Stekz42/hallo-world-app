@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <h1>Hallo World!</h1>
       <button className="custom-button">
-        <img src="/moon.png" alt="Moon Icon" className="button-icon" />
+        <img src="/moon.svg" alt="Moon Icon" className="button-icon" />
         Focus
       </button>
     </div>
