@@ -188,7 +188,7 @@ h1 {
   font-size: 17px;
   box-shadow: 0 0 15px rgba(129, 199, 132, 0.4); /* Schatten mit Button 1 Farbton */
   filter: brightness(1.1);
-
+}
 .cannabis-button-8:hover::after {
   opacity: 1;
 }
