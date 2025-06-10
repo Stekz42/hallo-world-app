@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX - 75, y: e.clientY - 25 }); // 75 und 25 sind die Hälfte der Button-Größe
+      setPosition({ x: e.clientX - 75, y: e.clientY - 25 }); // Hälfte der Button-Größe
     };
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <h1>Hallo World!</h1>
       <button
-        className="blend-button"
+        className="apple-button"
         style={{ left: position.x, top: position.y, position: 'absolute' }}
       >
         <img src="/moon.svg" alt="Moon Icon" className="button-icon" />
