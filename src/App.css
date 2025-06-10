@@ -180,11 +180,15 @@ h1 {
   position: relative;
 }
 .cannabis-button-8::after {
-  content: 'Join';
-  position: absolute;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
+  background: radial-gradient(circle, #2e7d32, #81c784); /* Grüner Farbverlauf von Button 1 */
+  border: 3px outset #388e3c; /* Ausgeprägter Rand, angepasst an Button 1 Farbe */
+  color: #fff;
+  padding: 11px 22px;
+  border-radius: 30px;
+  font-size: 17px;
+  box-shadow: 0 0 15px rgba(129, 199, 132, 0.4); /* Schatten mit Button 1 Farbton */
+  filter: brightness(1.1);
+
 .cannabis-button-8:hover::after {
   opacity: 1;
 }
@@ -205,13 +209,17 @@ h1 {
 /* Eigenschaften: Radialer Verlauf, gerippter Rand, innerer Schatten */
 
 .cannabis-button-10 {
-  background: linear-gradient(90deg, #2e7d32, #66bb6a, #a5d6a7);
-  border: 3px groove #43a047;
+  background: radial-gradient(circle, #2e7d32, #81c784); /* Grüner Farbverlauf von Button 1 */
+  border: 3px outset #388e3c; /* Ausgeprägter Rand, angepasst an Button 1 Farbe */
   color: #fff;
-  padding: 14px 28px;
-  border-radius: 20px;
-  font-size: 16px;
-  animation: pulse 2s infinite;
+  padding: 11px 22px;
+  border-radius: 30px;
+  font-size: 17px;
+  box-shadow: 0 0 15px rgba(129, 199, 132, 0.4); /* Schatten mit Button 1 Farbton */
+  filter: brightness(1.1);
+}
+.cannabis-button-10:hover {
+  filter: brightness(1.3);
 }
 @keyframes pulse {
   0% { transform: scale(1); }
