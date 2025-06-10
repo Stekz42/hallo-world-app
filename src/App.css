@@ -46,7 +46,8 @@ h1 {
   gap: 8px;
   position: absolute; /* Ermöglicht Bewegung */
   z-index: 2;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatten für 3D-Effekt */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
+  mix-blend-mode: difference; /* Dynamischer Effekt mit Hintergrund */
 }
 
 .apple-button::before {
